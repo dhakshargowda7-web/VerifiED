@@ -1,33 +1,108 @@
-VerifiEd — AI Scam Detection Platform
+VerifiED — AI-Powered Academic Certificate Verification System
 
-VerifiEd is an AI-powered scam detection tool that helps users verify internship offers, scholarships, job postings, emails, and website links. It uses NLP, scam-pattern recognition, and domain verification to generate a Scam Probability Score and protect people from fake opportunities worldwide.
+VerifiED is an AI-assisted platform that detects fraudulent academic certificates by analysing textual patterns, formatting inconsistencies, metadata, and document structure. It is designed to support schools, employers, institutions, and verification agencies that need a fast and reliable system to authenticate submitted certificates.
 
- Features
+This project is currently in the Prototype Planning Stage and is being developed for AI competitions, hackathons, and future deployment as a full web application.
 
-Scam Scanner — Upload PDFs, screenshots, messages, or URLs
+Problem Statement
 
-NLP Risk Analysis — Detects red-flag language and urgent payment traps
+Fake academic certificates are a rising issue across schools, colleges, and recruitment processes.
+Manual verification is slow, requires expertise, and can be inconsistent.
 
-Domain & Email Verification — Checks sender authenticity
+VerifiED uses AI and rule-based detection to:
 
-Certificate/Organization Validation
+Identify formatting anomalies
 
-Global Scam Database Matching
+Flag edited or manipulated areas
 
-Scam Probability Score (0–100)
+Analyse text consistency
 
-Clear Explanation of Detected Risks
+Match certificate patterns with known templates
 
- How It Works
+Output a verification confidence score
 
-User uploads an offer or link
+Project Goals
 
-AI analyzes content for scam patterns
+Build a web application where users can upload certificates (PDF/JPG/PNG)
 
-Cross-checks with scam database
+Process certificates through:
 
-Evaluates domain/IP reputation
+OCR-based text extraction
 
-Generates a Scam Score
+Layout anomaly analysis
 
-Provides a detailed risk summary + recommendation
+Template matching
+
+Basic image authenticity checks
+
+Deliver a result including:
+
+Authenticity score
+
+Highlighted suspicious regions
+
+Explanations for each flag
+
+Tech Stack (Planned)
+Component	Technology
+Frontend	React.js / HTML / Tailwind
+Backend	Python Flask / Node.js
+AI Models	Tesseract OCR, LayoutLM, CV anomaly detection
+Database	MongoDB / Firebase
+Deployment	Vercel / Render
+Current Status
+
+Idea planned and documented
+
+Submitted to competitions
+
+Architecture outlined
+
+UI prototype (upcoming)
+
+OCR + ML pipeline (upcoming)
+
+API integration (upcoming)
+
+MVP deployment (upcoming)
+
+Project will evolve as features are added.
+VerifiED/
+│── docs/               → Mockups, diagrams
+│── backend/            → API & AI models
+│── frontend/           → React UI
+│── sample_data/        → Example certificates
+│── README.md           → Documentation
+How It Works
+
+User uploads a certificate
+
+OCR extracts text
+
+AI analyses formatting and layout
+
+Template matcher compares with institution formats
+
+System checks anomalies (text or visual)
+
+Generates an authenticity score
+
+Displays detailed results
+
+Future Roadmap
+
+Build upload UI
+
+Integrate OCR text extraction
+
+Add certificate template matching
+
+Build anomaly detection module
+
+Create a basic certificate database
+
+Add admin dashboard for institutions
+
+Deploy early-version MVP
+
+Document results in a case study
